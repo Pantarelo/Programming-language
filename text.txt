@@ -1,0 +1,112 @@
+data_begin
+    class complex {
+        int real;
+        int img;
+
+        void addReal(int a, int b, string c){
+            int y;
+            real := a;
+        };
+        void addImg(int a){
+            img := a;
+        };
+
+        complex(int r, int i);
+    };
+
+    class clasa {
+        int f(){
+        };
+
+        clasa(int a);
+    };
+
+    class clasa2 {
+        int f(){
+
+        };
+        
+        clasa2(int f);
+    };
+data_end  
+
+global_begin 
+    int b:=23;
+    int a;
+    string c:="ANDREI";
+    int array[11];
+    const int y := 12;
+global_end
+
+global_func_begin 
+    int r(int a, int b) {
+        int a;
+    }; 
+    int x(int a) {
+        int a;
+    };
+global_func_end 
+
+
+begin 
+    complex p:= new complex(12,14);
+    complex z:= new complex(1,2);
+    p->real;
+    p->img;
+
+    a:=(6-4*2)/2;
+    b:=12;
+    b:=a;
+    int dd;
+    int newNumber:=102;
+    const float newConst := 1000;
+
+    int k;
+
+    string f:="AAAS";
+    
+    string nume;
+
+    Eval(a);
+    Eval(f);
+    Eval(c);
+    Eval(3+8/8-10);
+    Eval(3+6>5+100);
+
+    TypeOf(y);
+    TypeOf(array);
+
+    x(2);
+    r(2,92);
+
+    if (b>5) {
+        if (a>=b) {
+            if (5<2) {
+                if (a==b) {
+                   
+                }
+            }
+        }
+    };
+
+    if (b>5) {
+
+    }
+    else {
+
+    };
+
+    while(5<=6) {
+        if (a==b) {
+
+        }
+    };
+
+    for(int d;; a>b; d++) {
+        while (a == b) {
+
+        }
+    };
+
+    TypeOf(a);
+end
